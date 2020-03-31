@@ -15,7 +15,7 @@ public class MainClassTest extends MainClass{
 
     @Test
     public void testGetClassString(){
-        assertTrue(" метод getClassString возвращает строку, в которой есть подстрока “hello” или “Hello”",
+        assertTrue("Метод getClassString возвращает строку, в которой нет подстроки “hello” или “Hello”",
                 getClassString().contains("hello") || getClassString().contains("Hello"));
     }
 }
