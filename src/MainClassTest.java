@@ -12,4 +12,10 @@ public class MainClassTest extends MainClass{
     public void testGetClassNumber(){
         assertTrue("Результат выполнения метода родительского класса getClassNumber() < 45", getClassNumber() > 45);
     }
+
+    @Test
+    public void testGetClassString(){
+        assertTrue(" метод getClassString возвращает строку, в которой есть подстрока “hello” или “Hello”",
+                getClassString().contains("hello") || getClassString().contains("Hello"));
+    }
 }
